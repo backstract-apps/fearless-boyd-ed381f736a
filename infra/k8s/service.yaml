@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fearless-boyd-ed381f736a-srv
+  namespace: apps-dev
+spec:
+  selector:
+    app: fearless-boyd-ed381f736a
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 7070
+  type: ClusterIP
